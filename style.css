@@ -1,0 +1,86 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto' , sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100%;
+
+    background: linear-gradient(to top left , #ed7474 14% , #ff0066 100%);
+    
+}
+br {
+    border-bottom:1px dashed black;
+    display:block;
+}
+
+br:before { /* and :after */
+    border-bottom:1px dashed black;
+    /* content and display added as per porneL's comment */
+    content: "";
+    display: block;
+}
+
+br { /* and :before and :after */
+    content: url(a_dashed_line_image);
+}
+
+.header {
+    position: relative;
+    top: 160px;
+    font-size: 65px;
+    text-align: center;
+}
+.header .title{
+    color: #e189ac;
+}
+.header i{
+    color: #fcbabc;
+    font-weight: 900;
+    cursor: pointer;
+}
+.timer{
+    font-size: 42px;
+    color: #f5b7ef;
+    position: relative;
+    top: 250px;
+    display: flex;
+    justify-content: center;
+}
+.btn-container{
+    position: relative;
+    
+    top: 300px;
+    justify-content: center;
+    display: flex;
+
+}
+.cas{
+    
+    width: 190px;
+    height: 190px;
+    background-color: rgb(0, 204, 0);
+    border-radius: 51%;
+    border: none;
+    font-size: 45px;
+    font-weight: 500;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.44s ease;
+
+}
+.cas:hover{
+    opacity: 0.78;
+}
+.cas:active{
+    transform: scale(0.95);
+}
+.cas:focus{
+outline: none;
+border: none;
+
+}
